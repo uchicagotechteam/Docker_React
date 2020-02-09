@@ -13,8 +13,6 @@ ENV PATH /app/node_modules/.bin:$PATH
 COPY package.json /app/package.json
 
 RUN yarn install
-# If you are building your code for production
-# RUN npm ci --only=production
 
 # start app
-CMD ["yarn", "run"]
+CMD ["yarn", "start"]

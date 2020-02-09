@@ -17,13 +17,8 @@ delete:
 	docker stop $(CONTAINER_NAME)
 	docker rm $(CONTAINER_NAME)
 
-again: Dockerfile
-	make build
-	make delete
-	make run
-
-start:
-	make build
-	make run
+start: Dockerfile
+	docker build -t $(NS)/$(IMAGE_NAME):$(VERSION) -f Dockerfile .
+	docker run -v ${PWD}:/app -v /app/node_modules -p $(PORTS) --rm $(NS)/$(IMAGE_NAME):$(VERSION)
 
 default: build
