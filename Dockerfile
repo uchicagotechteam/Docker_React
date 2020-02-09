@@ -1,6 +1,8 @@
 # base image
 FROM node:12.2.0-alpine
 
+ARG build_env=dev
+
 # set working directory
 WORKDIR /app
 
@@ -11,6 +13,8 @@ ENV PATH /app/node_modules/.bin:$PATH
 COPY package.json /app/package.json
 
 RUN npm install
+# If you are building your code for production
+# RUN npm ci --only=production
 
 # start app
 CMD ["npm", "start"]
