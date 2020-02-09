@@ -4,16 +4,25 @@ React Native template for projects built and running in Docker
 Example react project credits: https://github.com/KarthikeyanRanasthala/react-unit-converter
 
 ## Prerequisites
-Make sure you have npm installed.
-Check with `node -v`
+Make sure you have Yarn installed for package management.
 
-If you don't have it, download Node.js which npm is distributed through. [https://nodejs.org/en/](https://nodejs.org/en/)
+Check with `yarn --version`
 
-If you have npm, you might want to update it if it's been a while.
+You might also want to upgrade Yarn if it's been a while.
 
-`npm install npm@latest -g`
+`brew upgrade yarn`
+
+If you don't have it, you can install Yarn with Homebrew. 
+
+`brew install yarn`
+
+Or with this shell script in macOS and generic Unix environments.
+
+`curl -o- -L https://yarnpkg.com/install.sh | bash`
+
+If you encounter any problems with installing Yarn, visit [https://classic.yarnpkg.com/en/docs/install](https://classic.yarnpkg.com/en/docs/install)
 
 ## Building and Running
 Run `make start` to build and run the Docker container. 
 
-The project will run locally in `http://localhost:3001` and will compile automatically upon changes to the src code.
+The project will run locally in `http://localhost:3000` and will compile automatically upon changes to the src code.

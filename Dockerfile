@@ -12,9 +12,9 @@ ENV PATH /app/node_modules/.bin:$PATH
 # install and cache app dependencies
 COPY package.json /app/package.json
 
-RUN npm install
+RUN yarn install
 # If you are building your code for production
 # RUN npm ci --only=production
 
 # start app
-CMD ["npm", "start"]
+CMD ["yarn", "run"]
