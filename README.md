@@ -4,7 +4,9 @@ React Native template for projects built and running in Docker
 Example react project credits: https://github.com/KarthikeyanRanasthala/react-unit-converter
 
 ## Prerequisites
-Make sure you have Yarn installed for package management.
+1. Make sure you have Docker installed. Follow the instructions for getting started [https://www.docker.com/get-started](https://www.docker.com/get-started)
+
+2. Make sure you have Yarn installed for package management.
 
 Check with `yarn --version`
 
