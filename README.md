@@ -1,6 +1,8 @@
 # Docker React Template Project
 React Native template for projects built and running in Docker
 
+See this example project running here [techteam-react-template-268418.appspot.com](here)
+
 Example react project credits: https://github.com/KarthikeyanRanasthala/react-unit-converter
 
 ## Prerequisites
