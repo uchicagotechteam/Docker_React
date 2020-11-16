@@ -32,4 +32,4 @@ If you encounter any problems with installing Yarn, visit [https://classic.yarnp
 ## Building and Running
 Run `make start` to build and run the Docker container. 
 
-The project will run locally in `http://localhost:3000` and will compile automatically upon changes to the src code.
+The project will run locally in `http://localhost:3001` and will compile automatically upon changes to the src code.
